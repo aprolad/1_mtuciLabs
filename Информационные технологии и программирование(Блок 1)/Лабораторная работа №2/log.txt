@@ -1,1 +1,3 @@
 ERROR:root:float division by zero
+INFO:root:4.774399204041917
+INFO:root:0.4203717625834315

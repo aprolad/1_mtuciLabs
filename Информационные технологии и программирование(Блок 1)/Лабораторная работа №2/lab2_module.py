@@ -1,6 +1,5 @@
 import math
 import logging
-
 def calc(x, y, a, b):
     if -4 < x <= 1 and y > -2:
         min = x ** y

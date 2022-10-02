@@ -1,5 +1,3 @@
-import math
-import logging
 from lab2_module import *
 
 
@@ -9,9 +7,10 @@ y = float(input("Введите y "))
 a = float(input("Введите a "))
 b = float(input("Введите b "))
 t = calc(x, y, a, b)
+logging.info(str(t))
 print("Результат программы: " + str(t))
 try:
-    with open("lab2result.txt", "w") as f:
+    with open("lab2result.txt", "a") as f:
         f.write("Результат работы программы: " + str(t) + "\n")
 except Exception as e:
     logging.error(str(e))
