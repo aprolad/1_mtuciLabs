@@ -1,10 +1,10 @@
 import math
-def calc(x, y):
-    result = (1 - math.e**(x*y))/(0.7 * math.log10(math.fabs(1 - x**2)))
-    return result
+class lab1:
+    def __init__(self, x, y):
+        self.output = (1 - math.e**(x*y))/(0.7 * math.log10(math.fabs(1 - x**2)))
 x = float(input("Введите x "))
 y = float(input("Введите y "))
-result = calc(x, y)
+result = lab1(x, y).output
 c = math.ceil(result)
 t = math.trunc(result)
 f = math.floor(result)
