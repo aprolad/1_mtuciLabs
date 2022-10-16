@@ -1,0 +1,71 @@
+# class Dist:
+#     meters, centimeters = 0, 0.0
+#     def set_dist(self, mt, ct):
+#         self.meters = mt
+#         self.centimeters = ct
+#     def get_dist(self):
+#         self.meters = int(input("Введите число метров: "))
+#         self.centimeters = float(input("Введите число сантиметров: "))
+#     def show_dist(self):
+#         print("{0} м {1} см".format(self.meters, self.centimeters))
+# dist1 = Dist()
+# dist2 = Dist()
+# dist3 = Dist()
+# dist2.set_dist(14, 25.)
+# dist3.get_dist()
+# print("dist1 = ", end = " ")
+# dist1.show_dist()
+# print("dist2 = ", end = " ")
+# dist2.show_dist()
+# print("dist3 = ", end = " ")
+# dist3.show_dist()
+
+
+
+# class MyClass:
+#     pass
+# MyClass.x = 100
+# obj1, obj2 = MyClass(), MyClass()
+# obj1.y = 10
+# obj2.y = 20
+# print("obj1.x = {0} obj1.y = {1}".format(obj1.x, obj1.y))
+# print("obj2.x = {0} obj2.y = {1}".format(obj2.x, obj2.y))
+
+
+# class MyClass:
+#     x = 10
+#     def __init__(self):
+#         self.y = 20
+# obj1, obj2 = MyClass(), MyClass()
+# print("obj1.x = {0} obj2.x = {1}".format(obj1.x, obj2.x))
+# MyClass.x = 50
+# print("obj1.x = {0} obj2.x = {1}".format(obj1.x, obj2.x))
+# print("obj1.y = {0} obj2.y = {1}".format(obj1.y, obj2.y))
+# obj1.y = 90
+# print("obj1.y = {0} obj2.y = {1}".format(obj1.y, obj2.y))
+# obj2.x = 60
+# MyClass.x = 80
+# print("obj1.x = {0} obj2.x = {1} MyClass.x = {2}".format(obj1.x, obj2.x, MyClass.x))
+
+
+class Dist:
+    def __init__(self, mt, ct):
+        self.meters = mt
+        self.centimeters = ct
+        print("Работает конструктор")
+    def get_dist(self):
+        self.meters = int(input("Введите число метров: "))
+        self.centimeters = float(input("Введите число сантиметров: "))
+    def show_dist(self):
+        print("{0} м {1} см".format(self.meters, self.centimeters))
+dist1 = Dist(0, 0.0)
+dist2 = Dist(14, 25.)
+dist3 = Dist(0, 0.0)
+dist3.get_dist()
+print("dist1 = ", end = " ")
+dist1.show_dist()
+print("dist2 = ", end = " ")
+dist2.show_dist()
+print("dist3 = ", end = " ")
+dist3.show_dist()
+
